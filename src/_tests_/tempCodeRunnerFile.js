@@ -1,0 +1,1 @@
+"https://football-data-api-92a7c1537ec2.herokuapp.com/getCurrentWeekScores"
