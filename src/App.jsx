@@ -14,6 +14,7 @@ function App() {
       const rawscores = await response.json();
       const scores = JSON.parse(rawscores);
       setCardsData(scores);
+      console.log(scores)
 
     }
     catch (error) {
@@ -38,8 +39,12 @@ function App() {
         <ScoreCard key={index} 
         teamName_0 = {data.teamName_0}
         teamScore_0 = {data.teamScore_0}
+        teamLogo_0 = {data.teamData_0[0].teamLogo}
+
         teamName_1 = {data.teamName_1}
         teamScore_1 = {data.teamScore_1}
+        teamLogo_1 = {data.teamData_1[0].teamLogo}
+        
         gameTime = {data.gameTime}
         Date = {data.Date}/>
       ))}
