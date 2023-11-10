@@ -14,7 +14,7 @@ function App() {
       const rawscores = await response.json();
       const scores = JSON.parse(rawscores);
       setCardsData(scores);
-      console.log(scores)
+      // console.log(scores)
 
     }
     catch (error) {
@@ -34,7 +34,8 @@ function App() {
 
 
   return (
-    <div class="flex flex-wrap m-10 p-10 justify-center">
+    <div>    
+        <div class="flex flex-wrap m-10 p-10 justify-center">
       {cardsData.map((data, index) => (
         <ScoreCard key={index} 
         teamName_0 = {data.teamName_0}
@@ -47,10 +48,18 @@ function App() {
         
         gameTime = {data.gameTime}
         Date = {data.Date}
-        nextEvent_0 = {data.teamData_0[0].nextEvent}
-        nextEvent_1 = {data.teamData_1[0].nextEvent}/>
+        teamStats_0 = {data.teamData_0[0].teamStats}
+        teamStats_1 = {data.teamData_1[0].teamStats}/>
       ))}
     </div>
+      
+    <div class=" block items-center text-center pb-10 max-sm:">
+      <a href='https://github.com/zauroff' class="font-semibold">github.com/zauroff</a>
+      <p>work in progress</p>
+    </div>
+    
+  </div>
+
   )
 
 
