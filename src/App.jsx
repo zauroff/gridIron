@@ -34,7 +34,7 @@ function App() {
 
 
   return (
-    <div class="justify-center m-10">
+    <div class="flex flex-wrap m-10 p-10 justify-center">
       {cardsData.map((data, index) => (
         <ScoreCard key={index} 
         teamName_0 = {data.teamName_0}
@@ -46,16 +46,14 @@ function App() {
         teamLogo_1 = {data.teamData_1[0].teamLogo}
         
         gameTime = {data.gameTime}
-        Date = {data.Date}/>
+        Date = {data.Date}
+        nextEvent_0 = {data.teamData_0[0].nextEvent}
+        nextEvent_1 = {data.teamData_1[0].nextEvent}/>
       ))}
     </div>
   )
 
-  // return (
-  //   <>
-  //     <ScoreCard teamOneName = "Giants" teamOneScore = "0" teamTwoName = "Jets" teamTwoScore = "100" gameTime = "9:00pm"/>
-  //   </>
-  // )
+
 }
 
 export default App
