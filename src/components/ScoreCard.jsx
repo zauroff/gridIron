@@ -5,7 +5,7 @@ function ScoreCard(props) {
         <div class="flex flex-row max-w-3xl justify-center items-center hover:drop-shadow-lg  p-6 m-10 shadow-md rounded-xl bg-neutral-800">
             
             <div class="flex flex-col justify-center items-center m-4 p-3">
-                <a href={props.nextEvent_0}>
+                <a href={props.nextEvent_0}  target="_blank">
                     <img src={props.teamLogo_0} class="object-scale-down h-40 w-96"></img>
                 </a>
                 
@@ -19,7 +19,7 @@ function ScoreCard(props) {
             </div>
             
             <div class="flex flex-col justify-center items-center m-4 p-3">
-                <a href={props.nextEvent_1}>
+                <a href={props.nextEvent_1}  target="_blank">
                     <img src={props.teamLogo_1} class="object-scale-down h-40 w-96"></img>
                 </a>
                 <p class="text-center font-bold text-lg pt-3">{props.teamName_1}</p>
