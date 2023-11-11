@@ -5,6 +5,7 @@
   "type": "module",
   "proxy": "https://football-data-api-92a7c1537ec2.herokuapp.com/",
   "scripts": {
+    "start": "vite preview",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
