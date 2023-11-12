@@ -26,7 +26,7 @@ function App() {
     fetchData(); // Fetch data on component mount
 
     // Set up an interval to refresh the data every 5 minutes
-    const intervalId = setInterval(fetchData, 300000); // 300000 ms = 5 minutes
+    const intervalId = setInterval(fetchData, 30000); // 300000 ms = 5 minutes
 
     // Clear the interval on component unmount
     return () => clearInterval(intervalId);
